@@ -1,0 +1,121 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 376px);
+    padding-right: calc(50% - 376px);
+  }
+  .header__left {
+    margin-left: 32px;
+  }
+  .header__right {
+    margin-right: 32px;
+  }
+  .top_logo__brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .top_logo__brand__text__top {
+    font-size: 44px;
+  }
+  .top_logo__brand__text__bot {
+    font-size: 24px;
+  }
+  .text_middle {
+    margin-top: 110px;
+    margin-bottom: 77px;
+  }
+  .content_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .button {
+    width: 212px;
+    height: 48px;
+    margin-left: 200px;
+  }
+  .footer_up {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .footer_midle {
+    grid-template-columns: 1fr;
+  }
+  .footer_midle_right {
+    margin-bottom: 50px;
+  }
+  .item_card:hover .add_to_cart_button {
+    margin-top: 180px;
+  }
+  .header-two {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    justify-content: space-between;
+    padding-right: 16px;
+  }
+  .item_card_rm {
+    display: none;
+  }
+  .reg {
+    gap: 23px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .reg__name {
+    width: 48%;
+  }
+  .reg__list {
+    width: 48%;
+    font-size: 16px;
+  }
+  .reg__list__heading {
+    margin-bottom: 10px;
+  }
+  .product_up__center {
+    margin-top: -72px;
+  }
+  .content_item {
+    gap: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .cart_items {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 60px;
+  }
+  .cart_items__list {
+    margin-bottom: 62px;
+  }
+  .cart_items__buttons {
+    justify-content: center;
+    gap: 48px;
+  }
+  .cart_items__desc {
+    width: 100%;
+    margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .cart_items__shipping {
+    width: 48%;
+  }
+  .cart_items__infbox {
+    width: 48%;
+    margin-top: 40px;
+    height: 214px;
+  }
+}/*# sourceMappingURL=style_tablet.css.map */

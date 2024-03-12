@@ -851,7 +851,9 @@ a {
 // cart page
 .cart_items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 128px;
 
     &__cart {
         max-width: 652px;
@@ -862,34 +864,38 @@ a {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin-bottom: 72px;
     }
 
     &__card {
-        box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
-        display: flex;
         position: relative;
-        max-width: 652px;
+        display: flex;
+        flex-direction: row;
+        height: 306px;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
     }
 
     &__desc {
-        padding: 22px 97px 62px 31px;
+        width: 390px;
+        padding-top: 22px;
+        padding-left: 31px;
     }
 
     &__title {
         color: #222;
-        font-family: Lato;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin-bottom: 32px;
-        width: 262px;
+        margin-bottom: 42px;
     }
 
     &__textbox {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
+        color: #575757;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal
     }
 
     &__text {
@@ -903,7 +909,8 @@ a {
     }
 
     &__price {
-        color: #EF5B70;
+        color: rgb(239, 91, 112);
+
     }
 
     &__color {
@@ -912,13 +919,11 @@ a {
 
     &__count {
         width: 44px;
-        color: #656565;
-        font-family: Lato;
+        border: 1px solid #EAEAEA;
+        background-color: #fff;
+        outline: none;
         font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding-left: 16px;
+        text-align: right;
         margin-left: 24px;
     }
 
@@ -934,8 +939,6 @@ a {
     &__buttons {
         display: flex;
         justify-content: space-between;
-        padding-top: 72px;
-        padding-bottom: 128px;
 
         &__button {
             color: #000;
@@ -953,10 +956,9 @@ a {
     }
 
     &__form {
-        padding-top: 113px;
-        padding-left: 128px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 22px;
     }
 
     &__desc {
@@ -979,9 +981,10 @@ a {
         }
 
         &__input {
-            width: 360px;
-            padding: 13px 0 16px 17.14px;
-            border: 1px solid #A4A4A4
+            padding: 12px 15px 16px;
+            background-color: #fff;
+            border: 1px solid #A4A4A4;
+            outline: none;
         }
 
         &__btn {
@@ -1059,4 +1062,110 @@ a {
     }
 
 
+}
+
+// registration page
+
+.reg {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20.5px;
+    }
+
+    &__title {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__input {
+        width: 360px;
+        padding: 13px 0 16px 17px;
+        border: 1px solid #A4A4A4;
+        stroke-width: 3px;
+        stroke: #A4A4A4;
+    }
+
+    &__input::placeholder {
+        color: #B1B1B1;
+    }
+
+    &__checkboxes {
+        margin-top: 31px;
+        margin-bottom: 33px;
+        display: flex;
+        gap: 20px;
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    &__text {
+        margin-top: 15px;
+        margin-bottom: 39px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__button-down {
+        padding: 16px 0;
+        width: 167px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: #FFF;
+        background-color: #F16D7F;
+        border: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        &__cols {
+            list-style-type: none;
+        }
+
+        &__rows {
+            padding-bottom: 16px;
+            display: flex;
+            gap: 16px;
+        }
+
+        &__rows::before {
+            content: url(img/registration/Vector.svg);
+        }
+    }
 }
